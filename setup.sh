@@ -20,3 +20,9 @@ sudo cp ~/bazel/bazel-bin/src/bazel /usr/bin
 git clone https://github.com/kozikow/keyremaplinux ~/keyremaplinux
 cd ~/keyremaplinux
 bazel build //keyremaplinux:keyremaplinux
+
+# Download intelliJ
+cd ~
+wget -O /tmp/intellij.tar.gz http://download.jetbrains.com/idea/ideaIC-15.0.1.tar.gz
+tar xfz /tmp/intellij.tar.gz
+mv idea-* intellij-idea
