@@ -48,6 +48,7 @@ chsh -s $(which zsh)
 chsh -s $(which zsh) $(whoami)
 
 # Tmux settings
+sudo apt-get install -y xclip
 sudo apt-get install -y tmux
 ln -s ~/github/dotfiles-public/.tmux.conf ~/.tmux.conf
 
