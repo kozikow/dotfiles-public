@@ -1,0 +1,10 @@
+alias cdw cd /ssh:robertkoz@robertkoz1.lon.corp.google.com:~
+alias work /ssh:robertkoz@robertkoz1.lon.corp.google.com:~
+alias installcask brew cask install $1 $*
+alias sff sudo-find-file $1
+alias ktox adb shell am force-stop im.tox.toxoid
+alias pwc pwd | pbcopy
+alias ff find-file $1
+alias d dired $1
+alias shc shell-command $*
+alias sc shell-command

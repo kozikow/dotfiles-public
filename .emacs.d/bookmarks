@@ -1,0 +1,41 @@
+;;;; Emacs Bookmark Format Version 1 ;;;;
+;;; This format is meant to be slightly human-readable;
+;;; nevertheless, you probably don't want to edit it.
+;;; -*- End Of Bookmark File Format Version Stamp -*-
+(#1=(#("org-capture-last-stored-marker" 0 30
+      (bmkp-full-record #1#))
+    (filename . "~/org/todo.org")
+    (buffer-name . "todo.org")
+    (front-context-string . "** TODO testing ")
+    (rear-context-string . "versal argument\n")
+    (front-context-region-string)
+    (rear-context-region-string)
+    (visits . 0)
+    (time . #2=(21208 9868 251022 0))
+    (created . #2#)
+    (position . 2060))
+#1=(#("org-refile-last-stored" 0 22
+      (bmkp-full-record #1#))
+    (filename . "~/org/todo.org")
+    (buffer-name . "todo.org")
+    (front-context-string . "** TODO testing ")
+    (rear-context-string . "versal argument\n")
+    (front-context-region-string)
+    (rear-context-region-string)
+    (visits . 0)
+    (time . #2=(21208 9868 250812 0))
+    (created . #2#)
+    (position . 2060))
+#1=(#("org-capture-last-stored" 0 23
+      (bmkp-full-record #1#))
+    (filename . "~/org/todo.org")
+    (buffer-name . "todo.org")
+    (front-context-string)
+    (rear-context-string . "0,2), [2]*5))]]\n")
+    (front-context-region-string)
+    (rear-context-region-string)
+    (visits . 0)
+    (time . #2=(21208 9868 266280 0))
+    (created . #2#)
+    (position . 2635))
+)
