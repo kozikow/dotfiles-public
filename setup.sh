@@ -28,7 +28,7 @@ bazel build //keyremaplinux:keyremaplinux
 mkdir ~/github
 git clone https://github.com/kozikow/github/dotfiles-public.git ~/github/dotfiles-public
 
-# Download IntelliJ
+# Configure IntelliJ
 cd ~
 wget -O /tmp/intellij.tar.gz http://download.jetbrains.com/idea/ideaIC-15.0.1.tar.gz
 tar xfz /tmp/intellij.tar.gz
