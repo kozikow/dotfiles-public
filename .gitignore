@@ -1,1 +1,12 @@
 *~
+.emacs.d/eshell/history
+.emacs.d/eshell/lastdir
+.emacs.d/auto-save-list/*
+.emacs.d/image-dired/*.jpg
+.emacs.d/image-dired/*.gif
+.emacs.d/image-dired/*.png
+.emacs.d/session.*
+.emacs.d/tramp
+*.elc
+.DS_Store
+session.[0-9a-z]*
