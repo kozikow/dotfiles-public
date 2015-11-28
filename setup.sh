@@ -11,7 +11,7 @@ sudo apt-get install -y openjdk-8-jdk openjdk-8-source
 # Bazel dependencies
 sudo apt-get install -y pkg-config zip zlib1g-dev unzip git
 
-# One of git config
+# Configure git
 git config --global push.default simple
 
 # Build bazel
@@ -28,11 +28,17 @@ bazel build //keyremaplinux:keyremaplinux
 mkdir ~/github
 git clone https://github.com/kozikow/github/dotfiles-public.git ~/github/dotfiles-public
 
-# Download intelliJ
+# Download IntelliJ
 cd ~
 wget -O /tmp/intellij.tar.gz http://download.jetbrains.com/idea/ideaIC-15.0.1.tar.gz
 tar xfz /tmp/intellij.tar.gz
 mv idea-* intellij-idea
+wget -O ~/ideavim.zip http://plugins.jetbrains.com/plugin/download?pr=idea&updateId=20052
+unzip ~/ideavim.zip
+cp -R ~/IdeaVim ~/.IdeaIC1*/config/plugins/
+git clone https://github.com/kozikow/programming_contests_live_templates.git ~/live_templates
+cd ~/.IdeaIC1*/config && mkdir templates && cd templates
+cp ~/live_templates/*.xml .
 
 # Configure emacs
 sudo apt-get install -y emacs24
