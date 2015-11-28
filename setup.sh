@@ -1,11 +1,12 @@
 apt-get update && apt-get dist-upgrade -y
 apt-get install -y software-properties-common python-software-properties
+apt-get install -y vim
 
 # C++
 apt-get install -y g++
 
 # Java 8
-sudo apt-get install openjdk-8-jdk openjdk-8-source
+sudo apt-get install -y openjdk-8-jdk openjdk-8-source
 
 # Bazel dependencies
 apt-get install -y pkg-config zip zlib1g-dev unzip git
