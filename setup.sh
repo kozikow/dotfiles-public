@@ -11,6 +11,9 @@ sudo apt-get install -y openjdk-8-jdk openjdk-8-source
 # Bazel dependencies
 sudo apt-get install -y pkg-config zip zlib1g-dev unzip git
 
+# One of git config
+git config --global push.default simple
+
 # Build bazel
 git clone https://github.com/google/bazel.git ~/bazel && cd ~/bazel
 ~/bazel/compile.sh
@@ -39,6 +42,7 @@ ln -s ~/github/dotfiles-public/.emacs.d ~/.emacs.d
 # Configure oh-my-zsh
 sudo apt-get install -y zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+rm ~/.zshrc  
 ln -s ~/github/dotfiles-public/.zshrc ~/.zshrc
 chsh -s $(which zsh)
 chsh -s $(which zsh) $(whoami)
