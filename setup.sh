@@ -40,7 +40,23 @@ ln -s ~/github/dotfiles-public/.emacs.d ~/.emacs.d
 sudo apt-get install -y zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ln -s ~/github/dotfiles-public/.zshrc ~/.zshrc
+chsh -s $(which zsh)
+chsh -s $(which zsh) $(whoami)
+
+# Tmux settings
+sudo apt-get install -y tmux
+ln -s ~/github/dotfiles-public/.tmux.conf ~/.tmux.conf
+
+#####################
+## Ubuntu specific ##
+#####################
+
+# Annoying ubuntu ads
+sudo apt-get remove -y unity-webapps-common
 
 # Ubuntu keybindings
-gsettings set org.gnome.desktop.wm.keybindings switch-windows "['<Super>Tab']"
+dconf write /org/compiz/profiles/unity/plugins/unityshell/show-launcher '"<Super>space"'
+gsettings set org.gnome.desktop.wm.keybindings switch-applications "['<Super>Tab']"
 
+# Side bar auto hide
+dconf write /org/compiz/profiles/unity/plugins/unityshell/launcher-hide-mode 1
