@@ -12,13 +12,11 @@ sudo apt-get install -y openjdk-8-jdk openjdk-8-source
 sudo apt-get install -y pkg-config zip zlib1g-dev unzip git
 
 # Build bazel
-git clone https://github.com/google/bazel.git /bazel && cd /bazel
-/bazel/compile.sh
-cp /bazel/bazel-bin/src/bazel /usr/local/bin
+git clone https://github.com/google/bazel.git ~/bazel && cd ~/bazel
+~/bazel/compile.sh
+sudo cp ~/bazel/bazel-bin/src/bazel /usr/bin
 
 # Build keyremaplinux
 git clone https://github.com/kozikow/keyremaplinux ~/keyremaplinux
 cd ~/keyremaplinux
-
-# Uncomment soon:
 bazel build //keyremaplinux:keyremaplinux
