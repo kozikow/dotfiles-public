@@ -71,3 +71,6 @@ gsettings set org.gnome.desktop.wm.keybindings switch-applications "['<Super>Tab
 
 # Side bar auto hide
 dconf write /org/compiz/profiles/unity/plugins/unityshell/launcher-hide-mode 1
+
+# Virtualbox utils. TODO: wrap into if
+sudo apt-get install -y virtualbox-guest-dkms 
